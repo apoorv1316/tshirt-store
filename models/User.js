@@ -72,4 +72,6 @@ userSchema.methods.getForgotPasswordToken = function () {
   this.forgotPasswordExpiry = Date.now() + 20 * 60 * 1000;
   return forgotToken;
 };
+
+
 module.exports = mongoose.model("User", userSchema);
